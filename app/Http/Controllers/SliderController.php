@@ -1,0 +1,65 @@
+<?php
+
+namespace admin\Http\Controllers;
+
+use Illuminate\Http\Request;
+use admin\Slider;
+use Illuminate\Support\Facades\Redirect;
+use admin\Http\Request\SliderFormRequest;
+use DB;
+
+
+class SliderController extends Controller
+{
+    public function __construct()
+    {
+
+    }
+    public function index(Request $request)
+    {
+    	if ($request)
+    	{
+    		$query=trim($request->get('searchText'));
+    		$slider=DB::table('slider')->where('imagen_slider','LIKE','%'.$query.'%');
+    		return view('slider.configurar.index',["slider"=>$slider,"searchText"=>$query]);
+    	}
+    }
+    public function create()
+    {
+    	return view ("slider.configurar.create");
+    }
+	public function store(SliderFormRequest $request)
+	{
+		$slider=new Slider;
+		$slider->imagen_slider=$request->get('imagen_slider');
+		$slider->titulo=$request->get('titulo');
+		$slider->texto=$request->get('texto');
+		$slider->save();
+		return Redirect::to('slider/configurar');
+	}
+	public function show($id)
+	{
+		return view("slider.configurar.show",["slider"=>Slider::findOrFail($id)]);
+	}
+	public function edit($id)
+	{
+		return view("slider.configurar.edit",["slider"=>Slider::findOrFail($id)]);	
+	}
+	public function update(SliderFormRequest $request, $id)
+	{
+		$slider=Slider::findOrFail($id);
+		$slider->imagen_slider=$request->get('imagen_slider');
+		$slider->titulo=$request->get('titulo');
+		$slider->texto=$request->get('texto');
+		$slider->update();
+		return Redirect::to('slider/configurar');
+	}
+	// public function destroy($id)
+	// {
+	// 	$slider=Slider::findOrFail($id);
+	// 	$slider->condicion='0';
+	// 	$slider->update();
+	// 	return Redirect::to('slider/configurar');
+	// }
+
+}
