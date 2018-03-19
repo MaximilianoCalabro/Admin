@@ -16,5 +16,10 @@ Route::get('/', function () {
 });
 
 Route::resource('slider/configurar','SliderController');
+Route::resource('institucional/configurar','InstitucionalController');
+Route::resource('servicios/configurar','ServiciosController');
+Route::resource('subservicios/configurar','SubserviciosController');
+// Route::resource('portfolio/configurar','PortfolioController');
+// Route::resource('contactenos/configurar','ContactenosController');
 
 

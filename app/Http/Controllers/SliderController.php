@@ -54,12 +54,11 @@ class SliderController extends Controller
 		$slider->update();
 		return Redirect::to('slider/configurar');
 	}
-	// public function destroy($id)
-	// {
-	// 	$slider=Slider::findOrFail($id);
-	// 	$slider->condicion='0';
-	// 	$slider->update();
-	// 	return Redirect::to('slider/configurar');
-	// }
+	public function destroy($id)
+	{
+		$slider=Slider::findOrFail($id);
+		$slider->delete();
+		return Redirect::to('slider/configurar');
+	}
 
 }

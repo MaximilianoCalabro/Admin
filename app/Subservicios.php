@@ -4,21 +4,19 @@ namespace admin;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Servicios extends Model
+class Subservicios extends Model
 {
-    protected $table='servicios';
+    protected $table='subservicios';
 
-	protected $primaryKey='idservicios';
+	protected $primaryKey='idsubservicios';
 
 	public $timestamps=false;
 
 	protected $fillable =[
-		'titulo',
-		'texto'
+		'subtitulo',
+		'subtexto'
 	];
 
 	protected $guarded =[
 
-	];
-
-}
+	];}

@@ -4,7 +4,7 @@ namespace admin\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ServiciosFormRequest extends FormRequest
+class SubserviciosFormRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,8 +24,8 @@ class ServiciosFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'titulo'=>'required|max:45',
-            'texto'=>'required|max:500'
+            'subtitulo'=>'required|max:50',
+            'subtexto'=>'required|max:500'
         ];
     }
 }
