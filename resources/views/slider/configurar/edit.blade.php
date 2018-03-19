@@ -13,7 +13,7 @@
             </div>
             @endif
 
-            {!!Form::model($slider,['method'=>'PATCH','route'=>['http://localhost:8000/configurar.update',$slider->idslider]])!!}
+            {!!Form::model($slider,['method'=>'PATCH','route'=>['configurar.update', $slider->idslider]])!!}
             {{Form::token()}}
             <div class="form-group">
                   <label for="imagen_slider">Imágen</label>

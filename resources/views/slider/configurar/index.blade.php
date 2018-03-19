@@ -12,12 +12,14 @@
 			<table class="table table-striped table-bordered table-condensed table-hover">
 				<thead>
 					<th>Imagen</th>
+					<th>ID</th>
 					<th>Título</th>
 					<th>Texto</th>
 				</thead>
                @foreach ($slider as $cat)
 				<tr>
 					<td>{{ $cat->imagen_slider}}</td>
+					<td>{{ $cat->idslider}}</td>
 					<td>{{ $cat->titulo}}</td>
 					<td>{{ $cat->texto}}</td>
 					<td>

@@ -45,6 +45,7 @@ class SubserviciosController extends Controller
 	}
 	public function update(SubserviciosFormRequest $request, $id)
 	{
+		dd("hi");
 		$subservicios=Subservicios::findOrFail($id);
 		$subservicios->subtitulo=$request->get('subtitulo');
 		$subservicios->subtexto=$request->get('subtexto');

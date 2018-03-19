@@ -45,6 +45,7 @@ class ServiciosController extends Controller
 	}
 	public function update(ServiciosFormRequest $request, $id)
 	{
+		dd("hi");
 		$servicios=Servicios::findOrFail($id);
 		$servicios->titulo=$request->get('titulo');
 		$servicios->texto=$request->get('texto');

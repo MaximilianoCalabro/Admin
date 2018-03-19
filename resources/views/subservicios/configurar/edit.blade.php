@@ -13,14 +13,14 @@
             </div>
             @endif
 
-            {!!Form::model($subservicios,['method'=>'PATCH','route'=>['http://localhost:8000/subservicios.configurar.update',$subservicios->idsubservicios]])!!}
+            {!!Form::model($subservicios,['method'=>'PATCH','route'=>['configurar.update',$subservicios->idsubservicios]])!!}
             {{Form::token()}}
             <div class="form-group">
-                  <label for="subtitulo">Título</label>
+                  <label for="subtitulo">Subtítulo</label>
                   <input type="text" name="titulo" class="form-control" value="{{$subservicios->subtitulo}}" placeholder="Título">
             </div>
             <div class="form-group">
-                  <label for="subtexto">Texto</label>
+                  <label for="subtexto">Subtexto</label>
                   <input type="text" name="subtexto" class="form-control" value="{{$subservicios->subtexto}}" placeholder="Texto...">
             </div>
             <div class="form-group">

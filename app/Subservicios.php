@@ -19,4 +19,5 @@ class Subservicios extends Model
 
 	protected $guarded =[
 
-	];}
+	];
+}

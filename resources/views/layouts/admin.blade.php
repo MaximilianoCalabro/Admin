@@ -87,7 +87,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="http://localhost:8000/slider/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="slider/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
             
@@ -98,7 +98,7 @@
                  <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="http://localhost:8000/institucional/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="institucional/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
             
@@ -109,7 +109,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="http://localhost:8000/servicios/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="servicios/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
            
@@ -120,7 +120,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="http://localhost:8000/subservicios/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="subservicios/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
 
@@ -131,7 +131,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="http://localhost:8000/portfolio/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="portfolio/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
 
@@ -142,7 +142,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="http://localhost:8000/contactenos/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="contactenos/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li> 
 
