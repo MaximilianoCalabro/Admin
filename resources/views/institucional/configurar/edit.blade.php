@@ -13,7 +13,7 @@
             </div>
             @endif
 
-            {!!Form::model($institucional,['method'=>'PATCH','route'=>['configurar.update',$institucional->idinstitucional]])!!}
+            {!!Form::model($institucional,['method'=>'PATCH','route'=>['institucional.configurar.update',$institucional->idinstitucional]])!!}
             {{Form::token()}}
             <div class="form-group">
                   <label for="titulo">Título</label>
