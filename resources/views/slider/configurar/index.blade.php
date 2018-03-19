@@ -15,8 +15,7 @@
 					<th>Título</th>
 					<th>Texto</th>
 				</thead>
-
-               @foreach ($sliders as $cat)
+               @foreach ($slider as $cat)
 				<tr>
 					<td>{{ $cat->imagen_slider}}</td>
 					<td>{{ $cat->titulo}}</td>
@@ -26,10 +25,11 @@
                         <a href=""><button class="btn btn-danger">Eliminar</button></a>
 					</td>
 				</tr>
-				@include('slider.configurar.modal')
+				@include('almacen.categoria.modal')
 				@endforeach
 			</table>
 		</div>
+		{{$categorias->render()}}
 	</div>
 </div>
 
