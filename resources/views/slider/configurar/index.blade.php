@@ -21,7 +21,7 @@
 					<td>{{ $cat->titulo}}</td>
 					<td>{{ $cat->texto}}</td>
 					<td>
-						<a href=""><button class="btn btn-info">Editar</button></a>
+						<a href="{{URL::action('SliderController@edit',$cat->idslider)}}"><button class="btn btn-info">Editar</button></a>
                         <a href=""><button class="btn btn-danger">Eliminar</button></a>
 					</td>
 				</tr>

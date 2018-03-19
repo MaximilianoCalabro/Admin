@@ -16,7 +16,7 @@
 			{!!Form::open(array('url'=>'slider/configurar','method'=>'POST','autocomplete'=>'off'))!!}
             {{Form::token()}}
             <div class="form-group">
-            	<label for="image_slider">Imágen</label>
+            	<label for="imagen_slider">Imágen</label>
             	<input type="text" name="imagen_slider" class="form-control" placeholder="Ruta de imágen">
             </div>
             <div class="form-group">
