@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::resource('slider/configurar','SliderController');
 
+

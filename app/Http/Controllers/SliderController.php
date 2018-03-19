@@ -5,7 +5,7 @@ namespace admin\Http\Controllers;
 use Illuminate\Http\Request;
 use admin\Slider;
 use Illuminate\Support\Facades\Redirect;
-use admin\Http\Request\SliderFormRequest;
+use admin\Http\Requests\SliderFormRequest;
 use DB;
 
 
@@ -20,7 +20,7 @@ class SliderController extends Controller
     	if ($request)
     	{
     		$query=trim($request->get('searchText'));
-    		$slider=DB::table('slider')->where('imagen_slider','LIKE','%'.$query.'%');
+    		$slider=DB::table('slider')->get();
     		return view('slider.configurar.index',["slider"=>$slider,"searchText"=>$query]);
     	}
     }
