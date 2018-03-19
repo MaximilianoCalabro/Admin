@@ -13,7 +13,7 @@
 			</div>
 			@endif
 
-			{!!Form::open(array('url'=>'slider/configurar','method'=>'POST','autocomplete'=>'off'))!!}
+			{!!Form::open(array('url'=>'http://localhost:8000/slider/configurar','method'=>'POST','autocomplete'=>'off'))!!}
             {{Form::token()}}
             <div class="form-group">
             	<label for="imagen_slider">Imágen</label>

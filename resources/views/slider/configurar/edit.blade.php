@@ -13,11 +13,11 @@
             </div>
             @endif
 
-            {!!Form::model($slider,['method'=>'PATCH','route'=>['configurar.update',$slider->idslider]])!!}
+            {!!Form::model($slider,['method'=>'PATCH','route'=>['http://localhost:8000/configurar.update',$slider->idslider]])!!}
             {{Form::token()}}
             <div class="form-group">
                   <label for="imagen_slider">Imágen</label>
-                  <input type="text" name="imagen_slider" class="form-control" value="{{$slider->imagen_slider}}" placeholder="Ruta de imágen">
+                  <input type="file" name="imagen_slider" class="form-control" value="{{$slider->imagen_slider}}" placeholder="Ruta de imágen">
             </div>
             <div class="form-group">
                   <label for="titulo">Título</label>
@@ -32,7 +32,7 @@
                   <button class="btn btn-danger" type="reset">Cancelar</button>
             </div>
 
-                  {!!Form::close()!!}           
+            {!!Form::close()!!}           
             
             </div>
       </div>

@@ -25,8 +25,8 @@ class SliderFormRequest extends FormRequest
     {
         return [
             'imagen_slider'=>'required|max:75',
-            'titulo'=>'required|max:45',
-            'texto'=>'required|max:500',
+            'titulo'=>'max:45',
+            'texto'=>'max:500',
         ];
     }
 }

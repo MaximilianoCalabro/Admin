@@ -13,7 +13,7 @@
 			</div>
 			@endif
 
-		{!!Form::open(array('url'=>'subservicios/configurar','method'=>'POST','autocomplete'=>'off'))!!}
+		{!!Form::open(array('url'=>'http://localhost:8000/subservicios/configurar','method'=>'POST','autocomplete'=>'off'))!!}
             {{Form::token()}}
             <div class="form-group">
             	<label for="subtitulo">Título</label>

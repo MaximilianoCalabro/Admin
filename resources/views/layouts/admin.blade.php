@@ -47,7 +47,7 @@
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <small class="bg-red">Online</small>
-                  <span class="hidden-xs">Juan Carlos Arcila Díaz</span>
+                  <span class="hidden-xs">User</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
@@ -87,18 +87,18 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="slider/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="http://localhost:8000/slider/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
             
-            <li class="treeview">
+             <li class="treeview">
               <a href="#">
                 <i class="fa fa-th"></i>
                 <span>Institucional</span>
                  <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="institucional/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="http://localhost:8000/institucional/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
             
@@ -109,7 +109,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="servicios/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="http://localhost:8000/servicios/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
            
@@ -120,7 +120,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="subservicios/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="http://localhost:8000/subservicios/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
 
@@ -131,7 +131,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="portfolio/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="http://localhost:8000/portfolio/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
 
@@ -142,9 +142,9 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="contactenos/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="http://localhost:8000/contactenos/configurar"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
-            </li>
+            </li> 
 
             <li class="treeview">
               <a href="#">
