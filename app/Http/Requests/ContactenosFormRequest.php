@@ -26,7 +26,7 @@ class ContactenosFormRequest extends FormRequest
         return [
             'titulo'=>'required|max:45',
             'direccion'=>'required|max:45',
-            'telefono'=>'required|max:20',
+            'numtel'=>'required|max:20',
             'correo'=>'required|max:320'
         ];
     }

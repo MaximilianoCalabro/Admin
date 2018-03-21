@@ -20,12 +20,12 @@
 				<tr>
 					<td>{{ $cat->titulo}}</td>
 					<td>{{ $cat->direccion}}</td>
-					<td>{{ $cat->telefono}}</td>
+					<td>{{ $cat->numtel}}</td>
 					<td>{{ $cat->correo}}</td>
 
 					<td>
-						<a href="{{URL::action('ContactenosController@edit',$cat->contactenos)}}"><button class="btn btn-info">Editar</button></a>
-                        <a href="" data-target="#modal-delete-{{$cat->contactenos}}" data-toggle="modal"><button class="btn btn-danger">Eliminar</button></a>
+						<a href="{{URL::action('ContactenosController@edit',$cat->idcontactenos)}}"><button class="btn btn-info">Editar</button></a>
+                        <a href="" data-target="#modal-delete-{{$cat->idcontactenos}}" data-toggle="modal"><button class="btn btn-danger">Eliminar</button></a>
 					</td>
 				</tr>
 				@include ('contactenos.configurar_contactenos.modal')

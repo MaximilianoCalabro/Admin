@@ -21,5 +21,6 @@ Route::resource('servicios/configurar_servicios','ServiciosController');
 Route::resource('subservicios/configurar_subservicios','SubserviciosController');
 Route::resource('portfolio/configurar_portfolio','PortfolioController');
 Route::resource('contactenos/configurar_contactenos','ContactenosController');
+Route::resource('user/configurar_user','UserController');
 
 

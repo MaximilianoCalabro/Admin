@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{asset('css/_all-skins.min.css')}}">
     <link rel="apple-touch-icon" href="{{asset('img/apple-touch-icon.png')}}">
     <link rel="shortcut icon" href="{{asset('img/favicon.ico')}}">
-
+    
   </head>
   <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
@@ -82,23 +82,23 @@
             
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-laptop"></i>
+                <i class="fa fa-arrows-h"></i>
                 <span>Slider</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="slider/configurar_slider"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="http://localhost:8000/slider/configurar_slider"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
             
              <li class="treeview">
               <a href="#">
-                <i class="fa fa-th"></i>
+                <i class="fa fa-users"></i>
                 <span>Institucional</span>
                  <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="institucional/configurar_institucional"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="http://localhost:8000/institucional/configurar_institucional"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
             
@@ -109,7 +109,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="servicios/configurar_servicios"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="http://localhost:8000/servicios/configurar_servicios"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
            
@@ -120,29 +120,29 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="subservicios/configurar_subservicios"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="http://localhost:8000/subservicios/configurar_subservicios"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
 
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-laptop"></i>
+                <i class="fa fa-hand-peace-o"></i>
                 <span>Portfolio</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="portfolio/configurar_portfolio"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="http://localhost:8000/portfolio/configurar_portfolio"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
 
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-laptop"></i>
+                <i class="fa fa-envelope-o"></i>
                 <span>Contactenos</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="contactenos/configurar_contactenos"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="http://localhost:8000/contactenos/configurar_contactenos"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li> 
 
@@ -152,7 +152,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="configuracion/usuario"><i class="fa fa-circle-o"></i> Usuarios</a></li>
+                <li><a href="http://localhost:8000/configuracion/usuario"><i class="fa fa-circle-o"></i> Usuarios</a></li>
                 
               </ul>
             </li>

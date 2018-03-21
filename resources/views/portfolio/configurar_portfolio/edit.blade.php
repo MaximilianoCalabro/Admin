@@ -25,7 +25,7 @@
             </div>
             <div class="form-group">
                   <label for="imagen_portfolio">Imágen</label>
-                  <input type="file" name="Imagen" accept="image/*" class="form-control" value="{{$portfolio->imagen_portfolio}}" placeholder="Imágen">
+                  <input type="text" name="Imagen" class="form-control" value="{{$portfolio->imagen_portfolio}}" placeholder="Imágen">
             </div>
             <div class="form-group">
                   <label for="subtitulo">Subítulo</label>

@@ -33,7 +33,7 @@ class ContactenosController extends Controller
 
 		$contactenos->titulo=$request->get('titulo');
 		$contactenos->direccion=$request->get('direccion');
-		$contactenos->telefono=$request->get('telefono');
+		$contactenos->numtel=$request->get('numtel');
 		$contactenos->correo=$request->get('correo');
 		$contactenos->save();
 		return Redirect::to('contactenos/configurar_contactenos');
@@ -51,7 +51,7 @@ class ContactenosController extends Controller
 		$contactenos=Contactenos::findOrFail($id);
 		$contactenos->titulo=$request->get('titulo');
 		$contactenos->direccion=$request->get('direccion');
-		$contactenos->telefono=$request->get('telefono');
+		$contactenos->numtel=$request->get('numtel');
 		$contactenos->correo=$request->get('correo');
 		$contactenos->update();
 		return Redirect::to('contactenos/configurar_contactenos');

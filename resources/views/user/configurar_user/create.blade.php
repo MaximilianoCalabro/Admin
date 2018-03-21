@@ -13,27 +13,26 @@
 			</div>
 			@endif
 
-			{!!Form::open(array('url'=>'http://localhost:8000/slider/configurar_slider','method'=>'POST','autocomplete'=>'off'))!!}
+		{!!Form::open(array('url'=>'http://localhost:8000/user/configurar_user','method'=>'POST','autocomplete'=>'off'))!!}
             {{Form::token()}}
             <div class="form-group">
-            	<label for="imagen_slider">Imágen</label>
-            	<input type="text" name="Imagen" class="form-control" placeholder="Ruta de imágen">
+            	<label for="user">Usuario</label>
+            	<input type="text" name="Usuario" class="form-control" placeholder="Usuario">
             </div>
             <div class="form-group">
-            	<label for="titulo">Título</label>
-            	<input type="text" name="titulo" class="form-control" placeholder="Título">
+            	<label for="mail">Correo</label>
+            	<input type="text" name="Correo" class="form-control" placeholder="Correo">
             </div>
             <div class="form-group">
-            	<label for="texto">Texto</label>
-            	<input type="text" name="texto" class="form-control" placeholder="Texto...">
+            	<label for="password">Contraseña</label>
+            	<input type="text" name="Contraseña" class="form-control" placeholder="Contraseña">
             </div>
             <div class="form-group">
             	<button class="btn btn-primary" type="submit">Guardar</button>
             	<button class="btn btn-danger" type="reset">Cancelar</button>
             </div>
 
-			{!!Form::close()!!}		
-            
+		{!!Form::close()!!}		
 		</div>
 	</div>
 @endsection

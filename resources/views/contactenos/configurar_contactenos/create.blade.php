@@ -24,12 +24,12 @@
             	<input type="text" name="Direccion" class="form-control" placeholder="Dirección">
             </div>
             <div class="form-group">
-            	<label for="telefono">Teléfono</label>
-            	<input type="tel" name="Telefono" class="form-control" placeholder="Teléfono">
+            	<label for="numtel">Teléfono</label>
+            	<input type="text" name="Telefono" class="form-control" placeholder="Teléfono">
             </div>
             <div class="form-group">
             	<label for="correo">Correo</label>
-            	<input type="email" name="Correo" class="form-control" placeholder="Correo">
+            	<input type="text" name="Correo" class="form-control" placeholder="Correo">
             </div>
             <div class="form-group">
             	<button class="btn btn-primary" type="submit">Guardar</button>

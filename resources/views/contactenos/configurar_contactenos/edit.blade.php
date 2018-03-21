@@ -24,12 +24,12 @@
                   <input type="text" name="Direccion" class="form-control" value="{{$contactenos->direccion}}" placeholder="Dirección">
             </div>
             <div class="form-group">
-                  <label for="telefono">Teléfono</label>
-                  <input type="tel" name="Telefono" class="form-control" value="{{$contactenos->telefono}}" placeholder="Teléfono">
+                  <label for="numtel">Teléfono</label>
+                  <input type="text" name="Telefono" class="form-control" value="{{$contactenos->numtel}}" placeholder="Teléfono">
             </div>
             <div class="form-group">
                   <label for="correo">Correo</label>
-                  <input type="email" name="Correo" class="form-control" value="{{$contactenos->correo}}" placeholder="Correo">
+                  <input type="text" name="Correo" class="form-control" value="{{$contactenos->correo}}" placeholder="Correo">
             </div>
 
             <div class="form-group">

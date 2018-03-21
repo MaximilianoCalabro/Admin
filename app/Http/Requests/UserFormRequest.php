@@ -24,8 +24,8 @@ class UserFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'nombre'=>'required|max:50',
-            'correo'=>'required|max:360',
+            'user'=>'required|max:50',
+            'mail'=>'required|max:360',
             'password'=>'required|max:50'
         ];
     }

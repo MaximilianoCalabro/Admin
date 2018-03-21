@@ -15,7 +15,7 @@ class Contactenos extends Model
 	protected $fillable =[
 		'titulo',
 		'direccion',
-		'telefono',
+		'numtel',
 		'correo'
 
 	];

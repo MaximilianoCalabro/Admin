@@ -25,7 +25,7 @@
             </div>
             <div class="form-group">
             	<label for="imagen_portfolio">Imágen</label>
-            	<input type="file" name="Imagen" accept="image/*" class="form-control" placeholder="Imágen..."> <!-- AUNQUE SEA INSERTADO "FALTA" -->
+            	<input type="text" name="Imagen" class="form-control" placeholder="Imágen..."> <!-- AUNQUE SEA INSERTADO "FALTA" -->
             </div>
             <div class="form-group">
             	<label for="subtitulo">Subtitulo</label>
