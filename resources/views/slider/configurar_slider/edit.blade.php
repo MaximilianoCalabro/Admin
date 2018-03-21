@@ -13,15 +13,19 @@
             </div>
             @endif
 
-            {!!Form::model($subservicios,['method'=>'PATCH','route'=>['configurar.update',$subservicios->idsubservicios]])!!}
+            {!!Form::model($slider,['method'=>'PATCH','route'=>['configurar_slider.update', $slider->idslider]])!!}
             {{Form::token()}}
             <div class="form-group">
-                  <label for="subtitulo">Subtítulo</label>
-                  <input type="text" name="titulo" class="form-control" value="{{$subservicios->subtitulo}}" placeholder="Título">
+                  <label for="imagen_slider">Imágen</label>
+                  <input type="file" name="Imagen" accept="image/*" class="form-control" value="{{$slider->imagen_slider}}" placeholder="Imágen">
             </div>
             <div class="form-group">
-                  <label for="subtexto">Subtexto</label>
-                  <input type="text" name="subtexto" class="form-control" value="{{$subservicios->subtexto}}" placeholder="Texto...">
+                  <label for="titulo">Título</label>
+                  <input type="text" name="Titulo" class="form-control" value="{{$slider->titulo}}" placeholder="Título">
+            </div>
+            <div class="form-group">
+                  <label for="texto">Texto</label>
+                  <input type="text" name="Texto" class="form-control" value="{{$slider->texto}}" placeholder="Texto...">
             </div>
             <div class="form-group">
                   <button class="btn btn-primary" type="submit">Guardar</button>

@@ -13,15 +13,19 @@
 			</div>
 			@endif
 
-			{!!Form::open(array('url'=>'http://localhost:8000/institucional/configurar','method'=>'POST','autocomplete'=>'off'))!!}
+			{!!Form::open(array('url'=>'http://localhost:8000/slider/configurar_slider','method'=>'POST','autocomplete'=>'off'))!!}
             {{Form::token()}}
+            <div class="form-group">
+            	<label for="imagen_slider">Imágen</label>
+            	<input type="file" name="Imagen" accept="image/*" class="form-control" placeholder="Ruta de imágen">
+            </div>
             <div class="form-group">
             	<label for="titulo">Título</label>
             	<input type="text" name="titulo" class="form-control" placeholder="Título">
             </div>
             <div class="form-group">
-            	<label for="prezi">Prezi</label>
-            	<input type="text" name="prezi" class="form-control" placeholder="Dirección de Prezi...">
+            	<label for="texto">Texto</label>
+            	<input type="text" name="texto" class="form-control" placeholder="Texto...">
             </div>
             <div class="form-group">
             	<button class="btn btn-primary" type="submit">Guardar</button>

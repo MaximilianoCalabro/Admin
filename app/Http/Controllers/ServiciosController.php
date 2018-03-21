@@ -20,12 +20,12 @@ class ServiciosController extends Controller
     	{
     		$query=trim($request->get('searchText'));
     		$servicios=DB::table('servicios')->get();
-    		return view('servicios.configurar.index',["servicios"=>$servicios,"searchText"=>$query]);
+    		return view('servicios.configurar_servicios.index',["servicios"=>$servicios,"searchText"=>$query]);
     	}
     }
     public function create()
     {
-    	return view ("servicios.configurar.create");
+    	return view ("servicios.configurar_servicios.create");
     }
 	public function store(ServiciosFormRequest $request)
 	{
@@ -33,29 +33,28 @@ class ServiciosController extends Controller
 		$servicios->titulo=$request->get('titulo');
 		$servicios->texto=$request->get('texto');
 		$servicios->save();
-		return Redirect::to('servicios/configurar');
+		return Redirect::to('servicios/configurar_servicios');
 	}
 	public function show($id)
 	{
-		return view("servicios.configurar.show",["servicios"=>Servicios::findOrFail($id)]);
+		return view("servicios.configurar_servicios.show",["servicios"=>Servicios::findOrFail($id)]);
 	}
 	public function edit($id)
 	{
-		return view("servicios.configurar.edit",["servicios"=>Servicios::findOrFail($id)]);	
+		return view("servicios.configurar_servicios.edit",["servicios"=>Servicios::findOrFail($id)]);	
 	}
 	public function update(ServiciosFormRequest $request, $id)
 	{
-		dd("hi");
 		$servicios=Servicios::findOrFail($id);
 		$servicios->titulo=$request->get('titulo');
 		$servicios->texto=$request->get('texto');
 		$servicios->update();
-		return Redirect::to('servicios/configurar');
+		return Redirect::to('servicios/configurar_servicios');
 	}
 	public function destroy($id)
 	{
 		$servicios=Servicios::findOrFail($id);
 		$servicios->delete();
-		return Redirect::to('servicios/configurar');
+		return Redirect::to('servicios/configurar_servicios');
 	}
 }

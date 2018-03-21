@@ -20,7 +20,7 @@ class SubserviciosController extends Controller
     	{
     		$query=trim($request->get('searchText'));
     		$subservicios=DB::table('subservicios')->get();
-    		return view('subservicios.configurar.index',["subservicios"=>$subservicios,"searchText"=>$query]);
+    		return view('subservicios.configurar_subservicios.index',["subservicios"=>$subservicios,"searchText"=>$query]);
     	}
     }
     public function create()
@@ -33,15 +33,15 @@ class SubserviciosController extends Controller
 		$subservicios->subtitulo=$request->get('subtitulo');
 		$subservicios->subtexto=$request->get('subtexto');
 		$subservicios->save();
-		return Redirect::to('subservicios/configurar');
+		return Redirect::to('subservicios/configurar_subservicios');
 	}
 	public function show($id)
 	{
-		return view("subservicios.configurar.show",["subservicios"=>Subservicios::findOrFail($id)]);
+		return view("subservicios.configurar_subservicios.show",["subservicios"=>Subservicios::findOrFail($id)]);
 	}
 	public function edit($id)
 	{
-		return view("subservicios.configurar.edit",["subservicios"=>Subservicios::findOrFail($id)]);	
+		return view("subservicios.configurar_subservicios.edit",["subservicios"=>Subservicios::findOrFail($id)]);	
 	}
 	public function update(SubserviciosFormRequest $request, $id)
 	{
@@ -50,12 +50,12 @@ class SubserviciosController extends Controller
 		$subservicios->subtitulo=$request->get('subtitulo');
 		$subservicios->subtexto=$request->get('subtexto');
 		$subservicios->update();
-		return Redirect::to('subservicios/configurar');
+		return Redirect::to('subservicios/configurar_subservicios');
 	}
 	public function destroy($id)
 	{
 		$subservicios=Subservicios::findOrFail($id);
 		$subservicios->delete();
-		return Redirect::to('subservicios/configurar');
+		return Redirect::to('subservicios/configurar_subservicios');
 	}
 }

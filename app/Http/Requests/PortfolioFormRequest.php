@@ -28,7 +28,7 @@ class PortfolioFormRequest extends FormRequest
             'separadores'=>'required|max:45',
             'imagen_portfolio'=>'required|max:75',
             'subtitulo'=>'required|max:45',
-            'pagina'=>'required|max:45'
+            'pagina'=>'required|max:75'
         ];
     }
 }

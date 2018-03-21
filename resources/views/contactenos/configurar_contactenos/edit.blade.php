@@ -13,16 +13,25 @@
             </div>
             @endif
 
-            {!!Form::model($institucional,['method'=>'PATCH','route'=>['institucional.configurar.update',$institucional->idinstitucional]])!!}
+            {!!Form::model($contactenos,['method'=>'PATCH','route'=>['configurar_contactenos.update',$contactenos->idcontactenos]])!!}
             {{Form::token()}}
             <div class="form-group">
                   <label for="titulo">Título</label>
-                  <input type="text" name="titulo" class="form-control" value="{{$institucional->titulo}}" placeholder="Título">
+                  <input type="text" name="Titulo" class="form-control" value="{{$contactenos->titulo}}" placeholder="Título">
             </div>
             <div class="form-group">
-                  <label for="prezi">Prezi</label>
-                  <input type="text" name="prezi" class="form-control" value="{{$institucional->prezi}}" placeholder="Dirección del Prezi...">
+                  <label for="direccion">Dirección</label>
+                  <input type="text" name="Direccion" class="form-control" value="{{$contactenos->direccion}}" placeholder="Dirección">
             </div>
+            <div class="form-group">
+                  <label for="telefono">Teléfono</label>
+                  <input type="tel" name="Telefono" class="form-control" value="{{$contactenos->telefono}}" placeholder="Teléfono">
+            </div>
+            <div class="form-group">
+                  <label for="correo">Correo</label>
+                  <input type="email" name="Correo" class="form-control" value="{{$contactenos->correo}}" placeholder="Correo">
+            </div>
+
             <div class="form-group">
                   <button class="btn btn-primary" type="submit">Guardar</button>
                   <button class="btn btn-danger" type="reset">Cancelar</button>

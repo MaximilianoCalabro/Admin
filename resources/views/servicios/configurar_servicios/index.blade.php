@@ -2,7 +2,7 @@
 @section ('contenido')
 <div class="row">
 	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-		<h3>- Servicios - <a href="http://localhost:8000/servicios/configurar/create"><button class="btn btn-success">Nuevo</button></a></h3>
+		<h3>- Servicios - <a href="http://localhost:8000/servicios/configurar_servicios/create"><button class="btn btn-success">Nuevo</button></a></h3>
 	</div>
 </div>
 
@@ -23,7 +23,7 @@
                         <a href="" data-target="#modal-delete-{{$cat->idservicios}}" data-toggle="modal"><button class="btn btn-danger">Eliminar</button></a>
 					</td>
 				</tr>
-				@include ('servicios.configurar.modal')
+				@include ('servicios.configurar_servicios.modal')
 				@endforeach
 			</table>
 		</div>

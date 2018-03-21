@@ -15,11 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('slider/configurar','SliderController');
-Route::resource('institucional/configurar','InstitucionalController');
-Route::resource('servicios/configurar','ServiciosController');
-Route::resource('subservicios/configurar','SubserviciosController');
-// Route::resource('portfolio/configurar','PortfolioController');
-// Route::resource('contactenos/configurar','ContactenosController');
+Route::resource('slider/configurar_slider','SliderController');
+Route::resource('institucional/configurar_institucional','InstitucionalController');
+Route::resource('servicios/configurar_servicios','ServiciosController');
+Route::resource('subservicios/configurar_subservicios','SubserviciosController');
+Route::resource('portfolio/configurar_portfolio','PortfolioController');
+Route::resource('contactenos/configurar_contactenos','ContactenosController');
 
 

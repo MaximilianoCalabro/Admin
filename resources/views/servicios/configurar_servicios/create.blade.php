@@ -13,12 +13,8 @@
 			</div>
 			@endif
 
-			{!!Form::open(array('url'=>'http://localhost:8000/slider/configurar','method'=>'POST','autocomplete'=>'off'))!!}
+		{!!Form::open(array('url'=>'http://localhost:8000/servicios/configurar_servicios','method'=>'POST','autocomplete'=>'off'))!!}
             {{Form::token()}}
-            <div class="form-group">
-            	<label for="imagen_slider">Imágen</label>
-            	<input type="text" name="imagen_slider" class="form-control" placeholder="Ruta de imágen">
-            </div>
             <div class="form-group">
             	<label for="titulo">Título</label>
             	<input type="text" name="titulo" class="form-control" placeholder="Título">
@@ -32,8 +28,7 @@
             	<button class="btn btn-danger" type="reset">Cancelar</button>
             </div>
 
-			{!!Form::close()!!}		
-            
+		{!!Form::close()!!}		
 		</div>
 	</div>
 @endsection

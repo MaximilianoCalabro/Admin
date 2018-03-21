@@ -21,12 +21,12 @@ class SliderController extends Controller
     	{
     		$query=trim($request->get('searchText'));
     		$slider=DB::table('slider')->get();
-    		return view('slider.configurar.index',["slider"=>$slider,"searchText"=>$query]);
+    		return view('slider.configurar_slider.index',["slider"=>$slider,"searchText"=>$query]);
     	}
     }
     public function create()
     {
-    	return view ("slider.configurar.create");
+    	return view ("slider.configurar_slider.create");
     }
 	public function store(SliderFormRequest $request)
 	{
@@ -35,15 +35,15 @@ class SliderController extends Controller
 		$slider->titulo=$request->get('titulo');
 		$slider->texto=$request->get('texto');
 		$slider->save();
-		return Redirect::to('slider/configurar');
+		return Redirect::to('slider/configurar_slider');
 	}
 	public function show($id)
 	{
-		return view("slider.configurar.show",["slider"=>Slider::findOrFail($id)]);
+		return view("slider.configurar_slider.show",["slider"=>Slider::findOrFail($id)]);
 	}
 	public function edit($id)
 	{
-		return view("slider.configurar.edit",["slider"=>Slider::findOrFail($id)]);	
+		return view("slider.configurar_slider.edit",["slider"=>Slider::findOrFail($id)]);	
 	}
 	public function update(SliderFormRequest $request, $id)
 	{
@@ -52,13 +52,13 @@ class SliderController extends Controller
 		$slider->titulo=$request->get('titulo');
 		$slider->texto=$request->get('texto');
 		$slider->update();
-		return Redirect::to('slider/configurar');
+		return Redirect::to('slider/configurar_slider');
 	}
 	public function destroy($id)
 	{
 		$slider=Slider::findOrFail($id);
 		$slider->delete();
-		return Redirect::to('slider/configurar');
+		return Redirect::to('slider/configurar_slider');
 	}
 
 }

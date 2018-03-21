@@ -21,12 +21,12 @@ class InstitucionalController extends Controller
     	{
     		$query=trim($request->get('searchText'));
     		$institucional=DB::table('institucional')->get();
-    		return view('institucional.configurar.index',["institucional"=>$institucional,"searchText"=>$query]);
+    		return view('institucional.configurar_institucional.index',["institucional"=>$institucional,"searchText"=>$query]);
     	}
     }
     public function create()
     {
-    	return view ("institucional.configurar.create");
+    	return view ("institucional.configurar_institucional.create");
     }
 	public function store(InstitucionalFormRequest $request)
 	{
@@ -35,15 +35,15 @@ class InstitucionalController extends Controller
 		$institucional->titulo=$request->get('titulo');
 		$institucional->prezi=$request->get('prezi');
 		$institucional->save();
-		return Redirect::to('institucional/configurar');
+		return Redirect::to('institucional/configurar_institucional');
 	}
 	public function show($id)
 	{
-		return view("institucional.configurar.show",["institucional"=>Institucional::findOrFail($id)]);
+		return view("institucional.configurar_institucional.show",["institucional"=>Institucional::findOrFail($id)]);
 	}
 	public function edit($id)
 	{
-		return view("institucional.configurar.edit",["institucional"=>Institucional::findOrFail($id)]);	
+		return view("institucional.configurar_institucional.edit",["institucional"=>Institucional::findOrFail($id)]);	
 	}
 	public function update(InstitucionalFormRequest $request, $id)
 	{
@@ -51,13 +51,13 @@ class InstitucionalController extends Controller
 		$institucional->titulo=$request->get('titulo');
 		$institucional->prezi=$request->get('prezi');
 		$institucional->update();
-		return Redirect::to('institucional/configurar');
+		return Redirect::to('institucional/configurar_institucional');
 	}
 	public function destroy($id)
 	{
 		$institucional=Institucional::findOrFail($id);
 		$institucional->delete();
-		return Redirect::to('institucional/configurar');
+		return Redirect::to('institucional/configurar_institucional');
 	}
 
 }
