@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Redirect;
 use admin\Http\Requests\ContactenosFormRequest;
 use DB;
 
+
 class ContactenosController extends Controller
 {
          public function __construct()
@@ -27,7 +28,7 @@ class ContactenosController extends Controller
     {
     	return view ("contactenos.configurar_contactenos.create");
     }
-	public function store(Contactenos $request)
+	public function store(ContactenosFormRequest $request)
 	{
 		$contactenos=new Contactenos;
 
@@ -46,7 +47,7 @@ class ContactenosController extends Controller
 	{
 		return view("contactenos.configurar_contactenos.edit",["contactenos"=>Contactenos::findOrFail($id)]);	
 	}
-	public function update(Contactenos $request, $id)
+	public function update(ContactenosFormRequest $request, $id)
 	{
 		$contactenos=Contactenos::findOrFail($id);
 		$contactenos->titulo=$request->get('titulo');
