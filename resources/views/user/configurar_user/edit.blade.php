@@ -17,15 +17,15 @@
             {{Form::token()}}
             <div class="form-group">
                   <label for="user">Usuario</label>
-                  <input type="text" name="Usuario" class="form-control" value="{{$user->user}}" placeholder="Usuario">
+                  <input type="text" name="user" class="form-control" value="{{$user->user}}" placeholder="Usuario">
             </div>
             <div class="form-group">
                   <label for="mail">Correo</label>
-                  <input type="text" name="Correo" class="form-control" value="{{$user->mail}}" placeholder="Correo">
+                  <input type="text" name="mail" class="form-control" value="{{$user->mail}}" placeholder="Correo">
             </div>
             <div class="form-group">
                   <label for="password">Contraseña</label>
-                  <input type="text" name="Contraseña" class="form-control" value="{{$user->password}}" placeholder="Contraseña">
+                  <input type="text" name="password" class="form-control" value="{{$user->password}}" placeholder="Contraseña">
             </div>
             <div class="form-group">
                   <button class="btn btn-primary" type="submit">Guardar</button>
