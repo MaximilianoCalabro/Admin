@@ -21,15 +21,15 @@
             </div>
             <div class="form-group">
                   <label for="direccion">Dirección</label>
-                  <input type="text" name="Direccion" class="form-control" value="{{$contactenos->direccion}}" placeholder="Dirección">
+                  <input type="text" name="direccion" class="form-control" value="{{$contactenos->direccion}}" placeholder="Dirección">
             </div>
             <div class="form-group">
                   <label for="numtel">Teléfono</label>
-                  <input type="text" name="Telefono" class="form-control" value="{{$contactenos->numtel}}" placeholder="Teléfono">
+                  <input type="text" name="numtel" class="form-control" value="{{$contactenos->numtel}}" placeholder="Teléfono">
             </div>
             <div class="form-group">
                   <label for="correo">Correo</label>
-                  <input type="text" name="Correo" class="form-control" value="{{$contactenos->correo}}" placeholder="Correo">
+                  <input type="text" name="correo" class="form-control" value="{{$contactenos->correo}}" placeholder="Correo">
             </div>
 
             <div class="form-group">

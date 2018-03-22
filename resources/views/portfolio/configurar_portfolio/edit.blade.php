@@ -17,19 +17,19 @@
             {{Form::token()}}
             <div class="form-group">
                   <label for="titulo">Título</label>
-                  <input type="text" name="Titulo" class="form-control" value="{{$portfolio->titulo}}" placeholder="Título">
+                  <input type="text" name="titulo" class="form-control" value="{{$portfolio->titulo}}" placeholder="Título">
             </div>
             <div class="form-group">
                   <label for="separadores">Separadores</label>
-                  <input type="text" name="Separadores" class="form-control" value="{{$portfolio->separadores}}" placeholder="Separadores">
+                  <input type="text" name="separadores" class="form-control" value="{{$portfolio->separadores}}" placeholder="Separadores">
             </div>
             <div class="form-group">
                   <label for="imagen_portfolio">Imágen</label>
-                  <input type="text" name="Imagen" class="form-control" value="{{$portfolio->imagen_portfolio}}" placeholder="Imágen">
+                  <input type="file" accept="image/*" name="imagen_portfolio" class="form-control" value="{{$portfolio->imagen_portfolio}}" placeholder="Imágen">
             </div>
             <div class="form-group">
                   <label for="subtitulo">Subítulo</label>
-                  <input type="text" name="Subtitulo" class="form-control" value="{{$portfolio->subtitulo}}" placeholder="Subtítulo">
+                  <input type="text" name="subtitulo" class="form-control" value="{{$portfolio->subtitulo}}" placeholder="Subtítulo">
             </div>
             <div class="form-group">
                   <label for="pagina">Dirección de Página</label>

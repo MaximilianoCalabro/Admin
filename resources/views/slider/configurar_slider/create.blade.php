@@ -17,7 +17,7 @@
             {{Form::token()}}
             <div class="form-group">
             	<label for="imagen_slider">Imágen</label>
-            	<input type="text" name="Imagen" class="form-control" placeholder="Ruta de imágen">
+            	<input type="file" accept="image/*" name="imagen_slider" class="form-control" placeholder="Ruta de imágen">
             </div>
             <div class="form-group">
             	<label for="titulo">Título</label>

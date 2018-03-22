@@ -17,11 +17,11 @@
             {{Form::token()}}
             <div class="form-group">
                   <label for="subtitulo">Subtítulo</label>
-                  <input type="text" name="titulo" class="form-control" value="{{$subservicios->subtitulo}}" placeholder="Título">
+                  <input type="text" name="subtitulo" class="form-control" value="{{$subservicios->subtitulo}}" placeholder="Subtítulo">
             </div>
             <div class="form-group">
                   <label for="subtexto">Subtexto</label>
-                  <input type="text" name="subtexto" class="form-control" value="{{$subservicios->subtexto}}" placeholder="Texto...">
+                  <input type="text" name="subtexto" class="form-control" value="{{$subservicios->subtexto}}" placeholder="Subtexto...">
             </div>
             <div class="form-group">
                   <button class="btn btn-primary" type="submit">Guardar</button>

@@ -21,15 +21,15 @@
             </div>
             <div class="form-group">
             	<label for="direccion">Dirección</label>
-            	<input type="text" name="Direccion" class="form-control" placeholder="Dirección">
+            	<input type="text" name="direccion" class="form-control" placeholder="Dirección">
             </div>
             <div class="form-group">
             	<label for="numtel">Teléfono</label>
-            	<input type="text" name="Telefono" class="form-control" placeholder="Teléfono">
+            	<input type="text" name="numtel" class="form-control" placeholder="Teléfono">
             </div>
             <div class="form-group">
             	<label for="correo">Correo</label>
-            	<input type="text" name="Correo" class="form-control" placeholder="Correo">
+            	<input type="text" name="correo" class="form-control" placeholder="Correo">
             </div>
             <div class="form-group">
             	<button class="btn btn-primary" type="submit">Guardar</button>

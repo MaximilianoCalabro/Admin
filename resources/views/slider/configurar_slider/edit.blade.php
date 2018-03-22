@@ -17,15 +17,15 @@
             {{Form::token()}}
             <div class="form-group">
                   <label for="imagen_slider">Imágen</label>
-                  <input type="text" name="Imagen" class="form-control" value="{{$slider->imagen_slider}}" placeholder="Imágen">
+                  <input type="file" accept="image/*" name="imagen_slider" class="form-control" value="{{$slider->imagen_slider}}" placeholder="Imágen">
             </div>
             <div class="form-group">
                   <label for="titulo">Título</label>
-                  <input type="text" name="Titulo" class="form-control" value="{{$slider->titulo}}" placeholder="Título">
+                  <input type="text" name="titulo" class="form-control" value="{{$slider->titulo}}" placeholder="Título">
             </div>
             <div class="form-group">
                   <label for="texto">Texto</label>
-                  <input type="text" name="Texto" class="form-control" value="{{$slider->texto}}" placeholder="Texto...">
+                  <input type="text" name="texto" class="form-control" value="{{$slider->texto}}" placeholder="Texto...">
             </div>
             <div class="form-group">
                   <button class="btn btn-primary" type="submit">Guardar</button>

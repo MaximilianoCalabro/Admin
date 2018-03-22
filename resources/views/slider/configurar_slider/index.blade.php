@@ -17,7 +17,7 @@
 				</thead>
                @foreach ($slider as $cat)
 				<tr>
-					<td>{{ $cat->imagen_slider}}</td>
+					<td><img src="{{ $cat->imagen_slider}}"> </td>
 					<td>{{ $cat->titulo}}</td>
 					<td>{{ $cat->texto}}</td>
 					<td>
