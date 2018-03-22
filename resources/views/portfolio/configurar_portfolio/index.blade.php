@@ -25,8 +25,8 @@
 					<td>{{ $cat->subtitulo}}</td>
 					<td>{{ $cat->pagina}}</td>
 					<td>
-						<a href="{{URL::action('PortfolioController@edit',$cat->portfolio)}}"><button class="btn btn-info">Editar</button></a>
-                        <a href="" data-target="#modal-delete-{{$cat->portfolio}}" data-toggle="modal"><button class="btn btn-danger">Eliminar</button></a>
+						<a href="{{URL::action('PortfolioController@edit',$cat->idportfolio)}}"><button class="btn btn-info">Editar</button></a>
+                        <a href="" data-target="#modal-delete-{{$cat->idportfolio}}" data-toggle="modal"><button class="btn btn-danger">Eliminar</button></a>
 					</td>
 				</tr>
 				@include ('portfolio.configurar_portfolio.modal')

@@ -1,4 +1,4 @@
-<div class="modal fade modal-slide-in-right" aria-hidden="true" role="dialog" tabindex="-1" id="modal-delete-{{$cat->portfolio}}">
+<div class="modal fade modal-slide-in-right" aria-hidden="true" role="dialog" tabindex="-1" id="modal-delete-{{$cat->idportfolio}}">
 	{{Form::Open(array('action'=>array('PortfolioController@destroy',$cat->idportfolio),'method'=>'delete'))}}
 	<div class="modal-dialog">
 		<div class="modal-content">
