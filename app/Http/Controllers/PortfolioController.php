@@ -5,6 +5,7 @@ namespace admin\Http\Controllers;
 use Illuminate\Http\Request;
 use admin\Portfolio;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Input;
 use admin\Http\Requests\PortfolioFormRequest;
 use DB;
 

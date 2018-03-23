@@ -26,7 +26,7 @@ class PortfolioFormRequest extends FormRequest
         return [
             'titulo'=>'required|max:45',
             'separadores'=>'required|max:45',
-            'imagen_portfolio'=>'required|max:75',
+            'imagen_portfolio'=>'mimes:jpeg,bmp,png',
             'subtitulo'=>'required|max:45',
             'pagina'=>'required|max:75'
         ];

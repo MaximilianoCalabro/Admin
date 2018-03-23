@@ -5,6 +5,7 @@ namespace admin\Http\Controllers;
 use Illuminate\Http\Request;
 use admin\Slider;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Input;
 use admin\Http\Requests\SliderFormRequest;
 use DB;
 
@@ -31,7 +32,7 @@ class SliderController extends Controller
 	public function store(SliderFormRequest $request)
 	{
 		$slider=new Slider;
-		$slider->imagen_slider=$request->get('imagen_slider');
+		$slider->imagen_slider=$request->get('imagen_slider'); /* Video 11/36 */
 		$slider->titulo=$request->get('titulo');
 		$slider->texto=$request->get('texto');
 		$slider->save();
