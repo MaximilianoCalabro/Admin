@@ -12,27 +12,26 @@
 				</ul>
 			</div>
 			@endif
-
-		{!!Form::open(array('url'=>'http://localhost:8000/slider/configurar_slider','method'=>'POST','autocomplete'=>'off','files'=>'true'))!!}
+            
+            {!!Form::open(array('url'=>'http://localhost:8000/slider/configurar_slider','method'=>'POST','autocomplete'=>'off','files'=>'true'))!!}
             {{Form::token()}}
             <div class="form-group">
-            	<label for="titulo">Título</label>
-            	<input type="text" name="titulo" class="form-control" placeholder="Título">
+                  <label for="titulo">Título</label>
+                  <input type="text" name="titulo" class="form-control" placeholder="Título">
             </div>
             <div class="form-group">
-            	<label for="texto">Texto</label>
-            	<input type="text" name="texto" class="form-control" placeholder="Texto...">
+                  <label for="texto">Texto</label>
+                  <input type="text" name="texto" class="form-control" placeholder="Texto...">
             </div>
             <div class="form-group">
                   <label for="imagen_slider">Imágen</label>
                   <input type="file" name="imagen_slider" class="form-control">
-                  <img src="{{('img/'.$slider->imagen_slider)}}" height="150px" width="150px">
             </div>
             <div class="form-group">
-            	<button class="btn btn-primary" type="submit">Guardar</button>
-            	<button class="btn btn-danger" type="reset">Cancelar</button>
+                  <button class="btn btn-primary" type="submit">Guardar</button>
+                  <button class="btn btn-danger" type="reset">Cancelar</button>
             </div>
-		{!!Form::close()!!}		
+            {!!Form::close()!!}		
             
 		</div>
 	</div>

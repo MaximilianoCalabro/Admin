@@ -34,7 +34,6 @@
             <div class="form-group">
                   <label for="imagen_portfolio">Imágen</label>
                   <input type="file" name="imagen_portfolio" class="form-control">
-                  <img src="{{asset('img/'.$portfolio->imagen_portfolio)}}" height="150px" width="150px">
             </div>
             <div class="form-group">
             	<button class="btn btn-primary" type="submit">Guardar</button>
