@@ -126,7 +126,7 @@
 
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-hand-peace-o"></i>
+                <i class="fa fa-folder"></i>
                 <span>Portfolio</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
@@ -148,11 +148,11 @@
 
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-folder"></i> <span>Acceso</span>
+                <i class="fa fa-male"></i> <span>Acceso</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="http://localhost:8000/user/configurar_user"><i class="fa fa-circle-o"></i> Usuarios</a></li>
+                <li><a href="http://localhost:8000/user/configurar_user"><i class="fa fa-circle-o"></i> Usuario</a></li>
                 
               </ul>
             </li>
