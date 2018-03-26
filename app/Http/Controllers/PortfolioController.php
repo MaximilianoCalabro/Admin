@@ -32,12 +32,15 @@ class PortfolioController extends Controller
 	public function store(PortfolioFormRequest $request)
 	{
 		$portfolio=new Portfolio;
-
 		$portfolio->titulo=$request->get('titulo');
 		$portfolio->separadores=$request->get('separadores');
-		$portfolio->imagen_portfolio=$request->get('imagen_portfolio');
 		$portfolio->subtitulo=$request->get('subtitulo');
 		$portfolio->pagina=$request->get('pagina');
+		if (Input::hasFile ('imagen_portfolio')){
+			$file=Input::file('imagen_portfolio');
+			$file->move(public_path().'/img/',$file->getClientOriginalName());
+			$portfolio->imagen_portfolio=$file->getClientOriginalName();
+		}
 		$portfolio->save();
 		return Redirect::to('portfolio/configurar_portfolio');
 	}
@@ -54,9 +57,13 @@ class PortfolioController extends Controller
 		$portfolio=Portfolio::findOrFail($id);
 		$portfolio->titulo=$request->get('titulo');
 		$portfolio->separadores=$request->get('separadores');
-		$portfolio->imagen_portfolio=$request->get('imagen_portfolio');
 		$portfolio->subtitulo=$request->get('subtitulo');
 		$portfolio->pagina=$request->get('pagina');
+		if (Input::hasFile ('imagen_portfolio')){
+			$file=Input::file('imagen_portfolio');
+			$file->move(public_path().'/img/',$file->getClientOriginalName());
+			$portfolio->imagen_portfolior=$file->getClientOriginalName();
+		}
 		$portfolio->update();
 		return Redirect::to('portfolio/configurar_portfolio');
 	}

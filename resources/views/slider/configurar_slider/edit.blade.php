@@ -13,12 +13,8 @@
             </div>
             @endif
 
-            {!!Form::model($slider,['method'=>'PATCH','route'=>['configurar_slider.update', $slider->idslider]])!!}
+            {!!Form::model($slider,['method'=>'PATCH','route'=>['configurar_slider.update', $slider->idslider],'files'=>'true'])!!}
             {{Form::token()}}
-            <div class="form-group">
-                  <label for="imagen_slider">Imágen</label>
-                  <input type="file" accept="image/*" name="imagen_slider" class="form-control" value="{{$slider->imagen_slider}}" placeholder="Imágen">
-            </div>
             <div class="form-group">
                   <label for="titulo">Título</label>
                   <input type="text" name="titulo" class="form-control" value="{{$slider->titulo}}" placeholder="Título">
@@ -26,6 +22,13 @@
             <div class="form-group">
                   <label for="texto">Texto</label>
                   <input type="text" name="texto" class="form-control" value="{{$slider->texto}}" placeholder="Texto...">
+            </div>
+            <div class="form-group">
+                  <label for="imagen_slider">Imágen</label>
+                  <input type="file" name="imagen_slider" class="form-control" value="{{$slider->imagen_slider}}">
+                  @if (($slider->imagen_slider)!='')
+                        <img src="{{asset('img/'.$slider->imagen_slider)}}" height="150px" width="150px">
+                  @endif
             </div>
             <div class="form-group">
                   <button class="btn btn-primary" type="submit">Guardar</button>

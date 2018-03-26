@@ -32,9 +32,13 @@ class SliderController extends Controller
 	public function store(SliderFormRequest $request)
 	{
 		$slider=new Slider;
-		$slider->imagen_slider=$request->get('imagen_slider'); /* Video 11/36 */
 		$slider->titulo=$request->get('titulo');
 		$slider->texto=$request->get('texto');
+		if (Input::hasFile ('imagen_slider')){
+			$file=Input::file('imagen_slider');
+			$file->move(public_path().'/img/',$file->getClientOriginalName());
+			$slider->imagen_slider=$file->getClientOriginalName();
+		}
 		$slider->save();
 		return Redirect::to('slider/configurar_slider');
 	}
@@ -49,9 +53,13 @@ class SliderController extends Controller
 	public function update(SliderFormRequest $request, $id)
 	{
 		$slider=Slider::findOrFail($id);
-		$slider->imagen_slider=$request->get('imagen_slider');
 		$slider->titulo=$request->get('titulo');
 		$slider->texto=$request->get('texto');
+		if (Input::hasFile ('imagen_slider')){
+			$file=Input::file('imagen_slider');
+			$file->move(public_path().'/img/',$file->getClientOriginalName());
+			$slider->imagen_slider=$file->getClientOriginalName();
+		}
 		$slider->update();
 		return Redirect::to('slider/configurar_slider');
 	}

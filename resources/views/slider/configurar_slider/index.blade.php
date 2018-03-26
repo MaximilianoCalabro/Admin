@@ -11,15 +11,15 @@
 		<div class="table-responsive">
 			<table class="table table-striped table-bordered table-condensed table-hover">
 				<thead>
-					<th>Imagen</th>
 					<th>Título</th>
 					<th>Texto</th>
+					<th>Imagen</th>
 				</thead>
                @foreach ($slider as $cat)
 				<tr>
-					<td><img src="{{ $cat->imagen_slider}}"> </td>
 					<td>{{ $cat->titulo}}</td>
 					<td>{{ $cat->texto}}</td>
+					<td><img src="{{asset('img/'.$cat->imagen_slider)}}" height="150px" width="150px"> </td>
 					<td>
 						<a href="{{URL::action('SliderController@edit',$cat->idslider)}}"><button class="btn btn-info">Editar</button></a>
                         <a href="" data-target="#modal-delete-{{$cat->idslider}}" data-toggle="modal"><button class="btn btn-danger">Eliminar</button></a>

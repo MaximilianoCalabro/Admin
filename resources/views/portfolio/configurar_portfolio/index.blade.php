@@ -21,7 +21,7 @@
 				<tr>
 					<td>{{ $cat->titulo}}</td>
 					<td>{{ $cat->separadores}}</td>
-					<td>{{ $cat->imagen_portfolio}}</td>
+					<td><img src="{{asset('img/'.$cat->imagen_portfolio)}}" height="150px" width="150px"> </td>
 					<td>{{ $cat->subtitulo}}</td>
 					<td>{{ $cat->pagina}}</td>
 					<td>

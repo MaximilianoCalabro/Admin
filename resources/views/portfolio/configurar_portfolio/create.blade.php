@@ -13,7 +13,7 @@
 			</div>
 			@endif
 
-			{!!Form::open(array('url'=>'http://localhost:8000/portfolio/configurar_portfolio','method'=>'POST','autocomplete'=>'off'))!!}
+		{!!Form::open(array('url'=>'http://localhost:8000/portfolio/configurar_portfolio','method'=>'POST','autocomplete'=>'off','files'=>'true'))!!}
             {{Form::token()}}
             <div class="form-group">
             	<label for="titulo">Título</label>
@@ -24,10 +24,6 @@
             	<input type="text" name="separadores" class="form-control" placeholder="Separadores">
             </div>
             <div class="form-group">
-            	<label for="imagen_portfolio">Imágen</label>
-            	<input type="file" accept="image/*" name="imagen_portfolio" class="form-control" placeholder="Imágen..."> <!-- AUNQUE SEA INSERTADO "FALTA" -->
-            </div>
-            <div class="form-group">
             	<label for="subtitulo">Subtitulo</label>
             	<input type="text" name="subtitulo" class="form-control" placeholder="Subtitulo">
             </div>
@@ -36,11 +32,15 @@
             	<input type="url" name="pagina" class="form-control" placeholder="Dirección de Página...">
             </div>
             <div class="form-group">
+                  <label for="imagen_portfolio">Imágen</label>
+                  <input type="file" name="imagen_portfolio" class="form-control">
+                  <img src="{{asset('img/'.$portfolio->imagen_portfolio)}}" height="150px" width="150px">
+            </div>
+            <div class="form-group">
             	<button class="btn btn-primary" type="submit">Guardar</button>
             	<button class="btn btn-danger" type="reset">Cancelar</button>
             </div>
-
-			{!!Form::close()!!}		
+		{!!Form::close()!!}		
             
 		</div>
 	</div>
