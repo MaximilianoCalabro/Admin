@@ -16,16 +16,41 @@
 		{!!Form::open(array('url'=>'http://localhost:8000/portfolio/configurar_portfolio','method'=>'POST','autocomplete'=>'off','files'=>'true'))!!}
             {{Form::token()}}
             <div class="form-group">
-            	<label for="titulo">Título</label>
-            	<input type="text" name="titulo" class="form-control" placeholder="Título">
+                  <label for="subtitulo">Nombre de Página</label>
+                  <input type="text" name="subtitulo" class="form-control" placeholder="Nombre de Página">
             </div>
             <div class="form-group">
             	<label for="separadores">Separadores</label>
             	<input type="text" name="separadores" class="form-control" placeholder="Separadores">
             </div>
             <div class="form-group">
-            	<label for="subtitulo">Subtitulo</label>
-            	<input type="text" name="subtitulo" class="form-control" placeholder="Subtitulo">
+                  <label for="filtro1">Filtro 1</label>
+                  <br>
+                  <select name="filtro1">
+                        <option value="filter-dp">Diseño y Programación Web</option> 
+                        <option value="filter-h">Hosting</option>
+                        <option value="filter-cm">Community Manager</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                  <label for="filtro2">Filtro 2</label>
+                  <br>
+                  <select name="filtro2">
+                        <option value="-">------------</option> 
+                        <option value="filter-dp">Diseño y Programación Web</option> 
+                        <option value="filter-h">Hosting</option>
+                        <option value="filter-cm">Community Manager</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                  <label for="filtro3">Filtro 3</label>
+                  <br>
+                  <select name="filtro3">
+                        <option value="-">------------</option> 
+                        <option value="filter-dp">Diseño y Programación Web</option> 
+                        <option value="filter-h">Hosting</option>
+                        <option value="filter-cm">Community Manager</option>
+                  </select>
             </div>
             <div class="form-group">
             	<label for="pagina">Dirección de Página</label>

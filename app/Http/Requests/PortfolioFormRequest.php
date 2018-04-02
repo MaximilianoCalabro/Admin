@@ -24,8 +24,10 @@ class PortfolioFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'titulo'=>'required|max:45',
             'separadores'=>'required|max:45',
+            'filtro1'=>'required|max:45',
+            'filtro2'=>'max:45',
+            'filtro3'=>'max:45',
             'imagen_portfolio'=>'mimes:jpeg,bmp,png',
             'subtitulo'=>'required|max:45',
             'pagina'=>'required|max:75'

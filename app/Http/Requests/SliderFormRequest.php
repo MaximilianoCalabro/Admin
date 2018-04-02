@@ -25,7 +25,7 @@ class SliderFormRequest extends FormRequest
     {
         return [
             'imagen_slider'=>'mimes:jpeg,bmp,png',
-            'titulo'=>'max:45',
+            'titulo'=>'required|max:45',
             'texto'=>'max:500',
         ];
     }

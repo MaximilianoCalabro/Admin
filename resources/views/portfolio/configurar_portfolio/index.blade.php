@@ -11,18 +11,20 @@
 		<div class="table-responsive">
 			<table class="table table-striped table-bordered table-condensed table-hover">
 				<thead>
-					<th>Título</th>
+					<th>Nombre de Página</th>
 					<th>Separadores</th>
+					<th>Filtro</th>
 					<th>Imágen</th>
-					<th>Subtítulo</th>
 					<th>Página</th>
 				</thead>
                @foreach ($portfolio as $cat)
 				<tr>
-					<td>{{ $cat->titulo}}</td>
-					<td>{{ $cat->separadores}}</td>
-					<td><img src="{{asset('img/'.$cat->imagen_portfolio)}}" height="150px" width="150px"> </td>
 					<td>{{ $cat->subtitulo}}</td>
+					<td>{{ $cat->separadores}}</td>
+					<td>{{ $cat->filtro1}} <br>
+						{{ $cat->filtro2}} <br>
+					    {{ $cat->filtro3}}</td>
+					<td><img src="{{asset('img/'.$cat->imagen_portfolio)}}" height="150px" width="150px"> </td>
 					<td>{{ $cat->pagina}}</td>
 					<td>
 						<a href="{{URL::action('PortfolioController@edit',$cat->idportfolio)}}"><button class="btn btn-info">Editar</button></a>

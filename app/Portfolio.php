@@ -15,6 +15,7 @@ class Portfolio extends Model
 	protected $fillable =[
 		'titulo',
 		'separadores',
+		'separadores2',
 		'imagen_portfolio',
 		'subtitulo',
 		'pagina'

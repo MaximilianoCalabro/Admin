@@ -25,7 +25,7 @@ class InstitucionalFormRequest extends FormRequest
     {
         return [
             'titulo'=>'required|max:45',
-            'prezi'=>'required|max:100'
+            'prezi'=>'required|max:500'
         ];
     }
 }

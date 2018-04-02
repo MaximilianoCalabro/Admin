@@ -25,7 +25,7 @@
       <header class="main-header">
 
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a href="/nks" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>ADM</b></span>
           <!-- logo for regular state and mobile devices -->
@@ -87,7 +87,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="http://localhost:8000/slider/configurar_slider"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="/slider/configurar_slider"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
             
@@ -98,7 +98,7 @@
                  <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="http://localhost:8000/institucional/configurar_institucional"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="/institucional/configurar_institucional"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
             
@@ -109,7 +109,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="http://localhost:8000/servicios/configurar_servicios"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="/servicios/configurar_servicios"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
            
@@ -120,7 +120,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="http://localhost:8000/subservicios/configurar_subservicios"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="/subservicios/configurar_subservicios"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
 
@@ -131,7 +131,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="http://localhost:8000/portfolio/configurar_portfolio"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="/portfolio/configurar_portfolio"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li>
 
@@ -142,7 +142,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="http://localhost:8000/contactenos/configurar_contactenos"><i class="fa fa-circle-o"></i> Configurar</a></li>
+                <li><a href="/contactenos/configurar_contactenos"><i class="fa fa-circle-o"></i> Configurar</a></li>
               </ul>
             </li> 
 
@@ -152,7 +152,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="http://localhost:8000/user/configurar_user"><i class="fa fa-circle-o"></i> Usuario</a></li>
+                <li><a href="/user/configurar_user"><i class="fa fa-circle-o"></i> Usuario</a></li>
                 
               </ul>
             </li>

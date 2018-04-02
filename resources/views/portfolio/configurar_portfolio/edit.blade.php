@@ -16,16 +16,42 @@
             {!!Form::model($portfolio,['method'=>'PATCH','route'=>['configurar_portfolio.update',$portfolio->idportfolio],'files'=>'true'])!!}
             {{Form::token()}}
             <div class="form-group">
-                  <label for="titulo">Título</label>
-                  <input type="text" name="titulo" class="form-control" value="{{$portfolio->titulo}}" placeholder="Título">
+                  <label for="subtitulo">Nombre de Página</label>
+                  <input type="text" name="subtitulo" class="form-control" value="{{$portfolio->subtitulo}}" placeholder="Nombre de Página">
             </div>
             <div class="form-group">
                   <label for="separadores">Separadores</label>
                   <input type="text" name="separadores" class="form-control" value="{{$portfolio->separadores}}" placeholder="Separadores">
             </div>
             <div class="form-group">
-                  <label for="subtitulo">Subítulo</label>
-                  <input type="text" name="subtitulo" class="form-control" value="{{$portfolio->subtitulo}}" placeholder="Subtítulo">
+                  <label for="filtro1">Filtro 1</label>
+                  <br>
+                  <select name="filtro1">
+                        <!-- <option value="{{$portfolio->filtro1}}"></option> -->
+                        <option value="filter-dp">Diseño y Programación Web</option> 
+                        <option value="filter-h">Hosting</option>
+                        <option value="filter-cm">Community Manager</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                  <label for="filtro2">Filtro 2</label>
+                  <br>
+                  <select name="filtro2">
+                        <option value="-">------------</option> 
+                        <option value="filter-dp">Diseño y Programación Web</option> 
+                        <option value="filter-h">Hosting</option>
+                        <option value="filter-cm">Community Manager</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                  <label for="filtro3">Filtro 3</label>
+                  <br>
+                  <select name="filtro3">
+                        <option value="-">------------</option> 
+                        <option value="filter-dp">Diseño y Programación Web</option> 
+                        <option value="filter-h">Hosting</option>
+                        <option value="filter-cm">Community Manager</option>
+                  </select>
             </div>
             <div class="form-group">
                   <label for="pagina">Dirección de Página</label>
