@@ -9,7 +9,7 @@ class User extends Authenticatable
 {
     protected $table='user';
 
-    protected $primaryKey='iduser';
+    protected $primaryKey='id';
 
     public $timestamps=false;
 
@@ -21,9 +21,12 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'user',
-        'mail',
-        'password'
+        'name',
+        'email',
+        'password',
+        'remember_token',
+        'create_at',
+        'updated_at'
     ];
 
     /**

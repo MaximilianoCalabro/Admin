@@ -25,11 +25,11 @@
       <header class="main-header">
 
         <!-- Logo -->
-        <a href="/nks" class="logo">
+        <a href="/" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b>ADM</b></span>
+          <span class="logo-mini"><b>NKS</b></span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>ADMIN</b></span>
+          <span class="logo-lg"><b>NKS</b></span>
         </a>
 
         <!-- Header Navbar: style can be found in header.less -->
@@ -42,7 +42,7 @@
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
               <!-- Messages: style can be found in dropdown.less-->
-              
+
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -52,7 +52,7 @@
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-
+                  
                   </li>
                   
                   <!-- Menu Footer-->
@@ -64,7 +64,7 @@
                   </li>
                 </ul>
               </li>
-              
+
             </ul>
           </div>
 
