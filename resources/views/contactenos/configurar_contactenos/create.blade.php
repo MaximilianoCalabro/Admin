@@ -13,7 +13,7 @@
 			</div>
 			@endif
 
-			{!!Form::open(array('url'=>'http://localhost:8000/contactenos/configurar_contactenos','method'=>'POST','autocomplete'=>'off'))!!}
+			{!!Form::open(array('url'=>'/contactenos/configurar_contactenos','method'=>'POST','autocomplete'=>'off'))!!}
             {{Form::token()}}
             <div class="form-group">
             	<label for="titulo">Título</label>

@@ -13,7 +13,7 @@
 			</div>
 			@endif
 
-		{!!Form::open(array('url'=>'http://localhost:8000/portfolio/configurar_portfolio','method'=>'POST','autocomplete'=>'off','files'=>'true'))!!}
+		{!!Form::open(array('url'=>'/portfolio/configurar_portfolio','method'=>'POST','autocomplete'=>'off','files'=>'true'))!!}
             {{Form::token()}}
             <div class="form-group">
                   <label for="subtitulo">Nombre de Página</label>

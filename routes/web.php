@@ -15,19 +15,16 @@
 //     return view('auth/login');
 // });
 
-
-Route::get('/', 'PaginaController@show');
-
 Route::resource('/slider/configurar_slider','SliderController');
 Route::resource('/institucional/configurar_institucional','InstitucionalController');
 Route::resource('/servicios/configurar_servicios','ServiciosController');
 Route::resource('/subservicios/configurar_subservicios','SubserviciosController');
 Route::resource('/portfolio/configurar_portfolio','PortfolioController');
 Route::resource('/contactenos/configurar_contactenos','ContactenosController');
-// Route::resource('/user/configurar_user','UserController');
+Route::resource('/layouts/admin','AdminController@index');
 
-
+Route::get('/', 'PaginaController@show');
+Route::get('/.admin', 'HomeController@index')->name('home');
 
 Auth::routes();
 
-Route::get('/.admin', 'HomeController@index')->name('home');

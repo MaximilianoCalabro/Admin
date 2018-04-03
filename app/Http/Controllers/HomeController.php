@@ -3,9 +3,6 @@
 namespace admin\Http\Controllers;
 
 use Illuminate\Http\Request;
-use admin\Home;
-use Illuminate\Support\Facades\Redirect;
-use DB;
 
 class HomeController extends Controller
 {
@@ -29,5 +26,3 @@ class HomeController extends Controller
         return view('home');
     }
 }
-
-

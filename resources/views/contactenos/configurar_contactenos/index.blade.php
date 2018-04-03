@@ -2,7 +2,7 @@
 @section ('contenido')
 <div class="row">
 	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-		<h3>- Contactenos - <a href="http://localhost:8000/contactenos/configurar_contactenos/create"><button class="btn btn-success">Nuevo</button></a></h3>
+		<h3>- Contactenos - <!-- <a href="/contactenos/configurar_contactenos/create"><button class="btn btn-success">Nuevo</button></a> --></h3>
 	</div>
 </div>
 
@@ -25,7 +25,7 @@
 
 					<td>
 						<a href="{{URL::action('ContactenosController@edit',$cat->idcontactenos)}}"><button class="btn btn-info">Editar</button></a>
-                        <a href="" data-target="#modal-delete-{{$cat->idcontactenos}}" data-toggle="modal"><button class="btn btn-danger">Eliminar</button></a>
+                        <!-- <a href="" data-target="#modal-delete-{{$cat->idcontactenos}}" data-toggle="modal"><button class="btn btn-danger">Eliminar</button></a> -->
 					</td>
 				</tr>
 				@include ('contactenos.configurar_contactenos.modal')

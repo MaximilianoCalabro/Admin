@@ -2,7 +2,7 @@
 @section ('contenido')
 <div class="row">
 	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-		<h3>- Subservicios - <a href="http://localhost:8000/subservicios/configurar_subservicios/create"><button class="btn btn-success">Nuevo</button></a></h3>
+		<h3>- Subservicios - <a href="/subservicios/configurar_subservicios/create"><button class="btn btn-success">Nuevo</button></a></h3>
 	</div>
 </div>
 
