@@ -25,7 +25,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = 'layouts.admin';
+    protected $redirectTo = '/slider/configurar_slider';
 
     /**
      * Create a new controller instance.
