@@ -146,7 +146,7 @@
               </ul>
             </li> 
 
-            <li class="treeview">
+<!--             <li class="treeview">
               <a href="#">
                 <i class="fa fa-male"></i> <span>Acceso</span>
                 <i class="fa fa-angle-left pull-right"></i>
@@ -155,7 +155,7 @@
                 <li><a href="/user/configurar_user"><i class="fa fa-circle-o"></i> Usuario</a></li>
                 
               </ul>
-            </li>
+            </li> -->
  <!--             <li>
               <a href="#">
                 <i class="fa fa-plus-square"></i> <span>Ayuda</span>
