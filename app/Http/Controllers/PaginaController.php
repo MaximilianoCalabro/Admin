@@ -11,7 +11,7 @@ class paginaController extends Controller
 {
 	public function __construct()
     {
-		$this->middleware('auth');
+		// $this->middleware('auth');
     }
     public function show() //cosulta a la db por cada seccion
 	{
