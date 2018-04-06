@@ -19,7 +19,7 @@
 				<tr>
 					<td>{{ $cat->titulo}}</td>
 					<td>{{ $cat->texto}}</td>
-					<td><img src="{{asset('img/'.$cat->imagen_slider)}}" height="150px" width="150px"> </td>
+					<td><img src="{{asset('img/'.$cat->imagen_slider)}}" height="150px" width="150px"></td>
 					<td>
 						<a href="{{URL::action('SliderController@edit',$cat->idslider)}}"><button class="btn btn-info">Editar</button></a>
                         <a href="" data-target="#modal-delete-{{$cat->idslider}}" data-toggle="modal"><button class="btn btn-danger">Eliminar</button></a>
