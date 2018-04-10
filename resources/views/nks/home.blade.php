@@ -80,23 +80,23 @@
         <div class="carousel-inner" role="listbox">
 			
 
-			@foreach($slider as $sli)
-            <!-- slider images -->
+			  @foreach($slider as $sli) <!-- slider images -->
 	            @if ($loop->first)
 	            <div class="carousel-item active">
 	            @else
 	            <div class="carousel-item">
 	            @endif
-	            <img src="{{url('/')}}/img/{{$sli->imagen_slider}}">
+              <div style="background-image: url('{{asset('img/$sli->imagen_slider')}}');"> 
+	            
 	                <div class="carousel-container">
 	                    <div class="carousel-content">
-							<h2>{{$sli->titulo}}</h2>
-							<p>{{$sli->texto}}</p>
+          							<h2>{{$sli->titulo}}</h2>
+          							<p>{{$sli->texto}}</p>
 	                    </div>
 	                </div>
+                  </div>
 	            </div>
-	            <!-- slider images -->
-            @endforeach
+        @endforeach <!-- slider images -->
 
         </div>
 
