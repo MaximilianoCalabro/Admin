@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{asset('css/_all-skins.min.css')}}">
     <link rel="apple-touch-icon" href="{{asset('img/apple-touch-icon.png')}}">
     <link rel="shortcut icon" href="{{asset('img/favicon.ico')}}">
+    <link href="{{asset('img/favicon.png')}}" rel="icon">
     
   </head>
   <body class="hold-transition skin-blue sidebar-mini">

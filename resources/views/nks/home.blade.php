@@ -12,7 +12,7 @@
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
   <!-- Favicons -->
-  <link href="{{asset('nkstyle/img/favicon.png')}}" rel="icon">
+  <link href="{{asset('img/favicon.png')}}" rel="icon">
   <link href="{{asset('nkstyle/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -86,7 +86,7 @@
 	            @else
 	            <div class="carousel-item">
 	            @endif
-              <div style="background-image: url('{{asset('img/$sli->imagen_slider')}}');"> 
+              <div style="background-image: url('nkstyle/img/{{$sli->imagen_slider}}');">
 	            
 	                <div class="carousel-container">
 	                    <div class="carousel-content">
