@@ -86,8 +86,8 @@
 	            @else
 	            <div class="carousel-item">
 	            @endif
-              <div style="background-image: url('nkstyle/img/{{$sli->imagen_slider}}');">
-	            
+  
+	            <img src="{{url('/')}}/img/{{$sli->imagen_slider}}">
 	                <div class="carousel-container">
 	                    <div class="carousel-content">
           							<h2>{{$sli->titulo}}</h2>
@@ -302,11 +302,11 @@
             <div class="icon"><marquee width="20%" scrollamount="5" ><i class="ion-social-rss"></i>Contactenos vía...</marquee></div>
             <br>
             <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> -->
               <a href="https://es-la.facebook.com/NKstudiosS/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <!-- <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> -->
+              <!-- <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a> -->
+              <!-- <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
             </div>
 
           </div>
