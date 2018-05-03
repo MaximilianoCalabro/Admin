@@ -82,19 +82,19 @@
 
 			  @foreach($slider as $sli) <!-- slider images -->
 	            @if ($loop->first)
-	            <div class="carousel-item active">
+	            <div class="carousel-item active" style="background-image: url('{{url('/')}}/img/{{$sli->imagen_slider}}');">
 	            @else
-	            <div class="carousel-item">
+	            <div class="carousel-item" style="background-image: url('{{url('/')}}/img/{{$sli->imagen_slider}}');">
 	            @endif
   
-	            <img src="{{url('/')}}/img/{{$sli->imagen_slider}}">
+	            <!-- <img src="{{url('/')}}/img/{{$sli->imagen_slider}}" class="img-fluid"> -->
 	                <div class="carousel-container">
 	                    <div class="carousel-content">
           							<h2>{{$sli->titulo}}</h2>
           							<p>{{$sli->texto}}</p>
 	                    </div>
 	                </div>
-                  </div>
+              
 	            </div>
         @endforeach <!-- slider images -->
 
