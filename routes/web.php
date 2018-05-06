@@ -21,12 +21,12 @@ Route::resource('/servicios/configurar_servicios','ServiciosController');
 Route::resource('/subservicios/configurar_subservicios','SubserviciosController');
 Route::resource('/portfolio/configurar_portfolio','PortfolioController');
 Route::resource('/contactenos/configurar_contactenos','ContactenosController');
-Route::resource('/.admin','AdminController@index');
+// Route::resource('/.admin','AdminController@index');
 
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout' );
 
 Route::get('/', 'PaginaController@show');
-Route::get('/admin', 'HomeController@index')->name('home');
+Route::get('/admin', 'HomeController@index');
 
 Auth::routes();
 

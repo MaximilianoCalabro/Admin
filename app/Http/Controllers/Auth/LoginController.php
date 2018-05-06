@@ -27,7 +27,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/admin';
+    protected $redirectTo = '/slider/configurar_slider';
 
     /**
      * Create a new controller instance.
@@ -38,6 +38,7 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
     public function logout(Request $request) {
         Auth::logout();
         return redirect('/login');
