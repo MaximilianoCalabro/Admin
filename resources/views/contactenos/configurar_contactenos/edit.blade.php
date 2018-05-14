@@ -17,7 +17,7 @@
             {{Form::token()}}
             <div class="form-group">
                   <label for="titulo">Título</label>
-                  <input type="text" name="Titulo" class="form-control" value="{{$contactenos->titulo}}" placeholder="Título">
+                  <input type="text" name="titulo" class="form-control" value="{{$contactenos->titulo}}" placeholder="Título">
             </div>
             <div class="form-group">
                   <label for="direccion">Dirección</label>

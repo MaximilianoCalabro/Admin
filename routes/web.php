@@ -26,7 +26,7 @@ Route::resource('/contactenos/configurar_contactenos','ContactenosController');
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout' );
 
 Route::get('/', 'PaginaController@show');
-Route::get('/admin', 'HomeController@index');
+Route::get('/.admin', 'HomeController@index');
 
 Auth::routes();
 
