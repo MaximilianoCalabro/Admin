@@ -4,6 +4,66 @@
   Author: BootstrapMade.com
   License: https://bootstrapmade.com/license/
 */
+
+/* Hamburguer */
+#menu-button{
+  background: rgba(243,27,27,0.7);
+  width: 50px;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  transition: all linear .3s;
+  padding: 4px;
+  z-index: 1;
+}
+
+#menu-button.active{
+  background: rgba(243,27,27,0.7);
+}
+#line-1,#line-2,#line-3{
+  width: 90%;
+  background: #fff;
+  height: 8px;
+  margin: 4px auto;
+  border-radius: 2px;
+  transition: all linear .3s;
+}
+
+#line-1.active{
+  -webkit-transform: translate(0px,12px) rotate(45deg);
+  transform: translate(0px,12px) rotate(45deg);
+}
+
+#line-2.active{
+  opacity: 0;
+}
+
+#line-3.active{
+  -webkit-transform: translate(0px, -12px) rotate(-45deg);
+  transform: translate(0px, -12px) rotate(-45deg);
+}
+
+#menu{
+  background: #3d3d3d;
+  width: 150px;
+  padding: 10px;
+  color: #fff;
+  font-family: arial;
+  font-size: 1.5rem;
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+}
+
+#menu ul{
+  list-style: none;
+}
+
+#menu ul li{
+  margin: 8px 0;
+}
+/* EndHamburguer */
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -19,7 +79,7 @@ a {
 }
 
 a:hover, a:active, a:focus {
-  color: #18d36e;
+  color: #FA4343;
   outline: none;
   text-decoration: none;
 }
@@ -147,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro .carousel-item::before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -324,7 +384,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Nav Meu Container */
 #nav-menu-container {
-  float: right;
+  float: left;
   margin: 0;
 }
 
@@ -345,7 +405,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 8px 10px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #FA4343;
+  color: #b4b4b4;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 13px;
@@ -354,7 +414,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu li:hover > a, .nav-menu > .menu-active > a {
-  color: #3DC54A;
+  color: #FA4343;
 }
 
 .nav-menu > li {
@@ -382,7 +442,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu ul li:hover > a {
-  color: #FA4343;
+  color: #b4b4b4;
 }
 
 .nav-menu ul ul {
@@ -473,7 +533,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #FA4343;
+  color: #b4b4b4;
 }
 
 #mobile-nav ul .menu-has-children li a {
@@ -481,7 +541,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #FA4343;
+  color: #b4b4b4;
 }
 
 #mobile-body-overly {
@@ -1335,3 +1395,8 @@ p+p+p {
 #footer .footer-top .footer-newsletter input[type="submit"]:hover {
   background: #13a456;
 }
+
+
+
+
+

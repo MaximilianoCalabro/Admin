@@ -35,7 +35,6 @@
 
 </head>
 
-<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
 
   <!--==========================
     Header
@@ -48,23 +47,39 @@
               <a href="#intro"><img src="img/logo.png" alt="" title="NK Studios" /></a>
       </div>
 
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Inicio</a></li>
-          <li><a href="#about">Institucional</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-         <!--  <li class="menu-has-children"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li> -->
-          <li><a href="#contact">Contactenos</a></li>
-        </ul>
-      </nav><!-- #nav-menu-container -->
+        <nav id="nav-menu-container">
+            <div id="menu-button">
+                <div id="line-1"></div>
+                <div id="line-2"></div>
+                <div id="line-3"></div>
+            </div>
+            <div id="menu">
+                <ul class="nav-menu">
+                    <li><a href="#intro">Inicio</a></li>
+                    <li><a href="#about">Institucional</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contactenos</a></li>
+                </ul>
+            </div>
+        </nav>
+      {{--<nav id="nav-menu-container">--}}
+        {{--<ul class="nav-menu">--}}
+          {{--<li class="menu-active"><a href="#intro">Inicio</a></li>--}}
+          {{--<li><a href="#about">Institucional</a></li>--}}
+          {{--<li><a href="#services">Servicios</a></li>--}}
+          {{--<li><a href="#portfolio">Portfolio</a></li>--}}
+         {{--<!--  <li class="menu-has-children"><a href="">Drop Down</a>--}}
+            {{--<ul>--}}
+              {{--<li><a href="#">Drop Down 1</a></li>--}}
+              {{--<li><a href="#">Drop Down 3</a></li>--}}
+              {{--<li><a href="#">Drop Down 4</a></li>--}}
+              {{--<li><a href="#">Drop Down 5</a></li>--}}
+            {{--</ul>--}}
+          {{--</li> -->--}}
+          {{--<li><a href="#contact">Contactenos</a></li>--}}
+        {{--</ul>--}}
+      {{--</nav><!-- #nav-menu-container -->--}}
     </div>
   </header><!-- #header -->
 
@@ -219,7 +234,7 @@
 
 	        <div class="row contact-info">
 
-	          <div class="col-md-3">
+	          <div class="col-md-2">
 	            <div class="contact-address">
 	              <i class="ion-ios-location-outline"></i>
 	              <h3>Dirección</h3>
@@ -227,7 +242,7 @@
 	            </div>
 	          </div>
 
-	          <div class="col-md-3">
+	          <div class="col-md-2">
 	            <div class="contact-phone">
 	              <i class="ion-ios-telephone-outline"></i>
 	              <h3>Número Telefónico</h3>
@@ -235,7 +250,7 @@
 	            </div>
 	          </div>
 
-	          <div class="col-md-3">
+	          <div class="col-md-2">
 	            <div class="contact-email">
 	              <i class="ion-ios-email-outline"></i>
 	              <h3>Correo</h3>
@@ -243,7 +258,7 @@
 	            </div>
 	          </div>
 
-	          <div class="col-md-3">
+	          <div class="col-md-6">
 	            <div id="map_container">
 	              <div id="map responsive">
 	                <div class="google-maps">
