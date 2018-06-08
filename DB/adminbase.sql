@@ -156,6 +156,7 @@ INSERT INTO `slider` (`idslider`, `imagen_slider`, `titulo`, `texto`) VALUES
 
 CREATE TABLE `subservicios` (
   `idsubservicios` int(11) NOT NULL,
+  `icono` varchar(100) NOT NULL,
   `subtitulo` varchar(50) NOT NULL,
   `subtexto` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -165,10 +166,10 @@ CREATE TABLE `subservicios` (
 --
 
 INSERT INTO `subservicios` (`idsubservicios`, `subtitulo`, `subtexto`) VALUES
-(1, 'Marketing y Publicidad', 'NK ofrece a sus clientes un equipo de trabajo especializado, profesional, con gran capacidad y experiencia que se integra a su empresa, local o emprendimiento convirtiéndose en su estructura de Marketing.'),
-(2, 'Social Media', 'Escuchamos, planificamos y actuamos para alcanzar tu mercado objetivo y así aumentar tus ventas, tu contacto con tus seguidores o dar a conocer tus actividades, ideas o convicciones.'),
-(3, 'Diseño y Programación Web', 'Realizados a medida, utilizando las mas actualizadas herramientas y estrategias digitales, sustentados con la experiencia de mas de 17 años en el rubro e infinidad de clientes y desafíos que forman parte de la experiencia y la calidad de nuestros desarrollos.'),
-(4, 'Arquitectura Publicitaria', 'Desarrollamos ideas para hacer más visibles tus productos, ideas para que tu presencia en ferias o exposiciones sea la mas adecuada a tu estrategia de Marketing ferial.');
+(1, 'icono1.png', 'Marketing y Publicidad', 'NK ofrece a sus clientes un equipo de trabajo especializado, profesional, con gran capacidad y experiencia que se integra a su empresa, local o emprendimiento convirtiéndose en su estructura de Marketing.'),
+(2, 'icono2.png', 'Social Media', 'Escuchamos, planificamos y actuamos para alcanzar tu mercado objetivo y así aumentar tus ventas, tu contacto con tus seguidores o dar a conocer tus actividades, ideas o convicciones.'),
+(3, 'icono3.jpg', 'Diseño y Programación Web', 'Realizados a medida, utilizando las mas actualizadas herramientas y estrategias digitales, sustentados con la experiencia de mas de 17 años en el rubro e infinidad de clientes y desafíos que forman parte de la experiencia y la calidad de nuestros desarrollos.'),
+(4, 'icono4.jpg', 'Arquitectura Publicitaria', 'Desarrollamos ideas para hacer más visibles tus productos, ideas para que tu presencia en ferias o exposiciones sea la mas adecuada a tu estrategia de Marketing ferial.'),
 
 -- --------------------------------------------------------
 
