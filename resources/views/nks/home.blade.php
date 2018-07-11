@@ -200,7 +200,7 @@
         </div>
 
         <div class="row portfolio-container">
-   		@foreach ($portfolio as $folio)
+   		   @foreach ($portfolio as $folio)
           <div class="col-lg-4 col-md-6 portfolio-item {{$folio->filtro1}} {{$folio->filtro2}} {{$folio->filtro3}} wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
@@ -215,7 +215,7 @@
               </div>
             </div>
           </div>
-		@endforeach
+		    @endforeach
         </div>
 
       </div>
